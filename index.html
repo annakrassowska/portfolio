@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio - Anna Krassowska">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Anna Krassowska</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay hidden"></div>
+    <header class="header">
+        <div class="container flex">
+
+            <a href="#" class="logo">
+                <img src="./img/logo.svg" class="logo" alt="logo" />
+            </a>
+
+            <nav class="navigation--desktop">
+                <ul>
+                    <li>
+                        <a href="#portfolio">Projekty</a>
+                    </li>
+                    <li>
+                        <a href="#about">O mnie</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="hamburger-menu" class="hamburger">
+                <svg viewBox="0 0 35 35">
+                    <path opacity="0.7" fill="#737373" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+            </button> 
+            
+            <div id="menu-mobile" class="navigation--mobile hidden">
+                <div class="menu">
+                    <div class="flex menu__top">
+                        <a href="#" class="logo">
+                            <img src="./img/logo.svg" class="logo" alt="logo" />
+                        </a>
+                        <button id="hide-menu" class="btn-menu">
+                            <svg width="20" height="20" class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="menu-mobile__list">
+                        <li>
+                            <a href="#portfolio" class="active">Projekty</a>
+                        </li>
+                        <li>
+                            <a href="#about">O mnie</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div> 
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION SHOWCASE -->
+        <section class="showcase">
+            <div class="container flex">
+                <div class="showcase__img">
+                    <img src="img/showcase-image.jpg" alt="zdjęcie autora" class="showcase__photo">
+                </div>
+                <div class="showcase__info">
+                    <img src="img/asset-dots.png" alt="kropki" class="img-dots">
+                    <h1 class="heading1">Anna Krassowska</h1>
+                    <h2 class="heading2">Web Support & Developer</h2>
+                    <div class="buttons">
+                        <button class="btn">
+                            <a href="https://github.com/annakrassowska" target="_blank">Github</a>
+                        </button>
+                        <button class="btn btn--outline">
+                            <a href="https://drive.google.com/file/d/1cZUq9h3I3fak5KRO6guH2n_I3S7BpG7T/view?usp=sharing" target="_blank">CV</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="portfolio__title">
+                        <h3 class="heading3">Projekty z kursu</h3>
+                    </div>
+                    <div class="portfolio__projects">
+                        <div class="project project--1">
+                            <img src="img/blog-1.png" class="article__img" alt="zdjęcie aplikacji" data-aos="flip-up" data-aos-delay="200" data-aos-duration="750">
+                            <ul class="technology__list">
+                                <li>html</li>
+                                <li>scss</li>
+                                <li>javascript</li>
+                                <li>Jquery</li>
+                            </ul>
+                            <h4 class="project__title heading4">IT wind</h4>
+                            <p class="project__description">Strona agencji IT wind wykonana na podstawie projektu graficznego. </p>
+                            <div class="buttons">
+                                <button class="btn">
+                                    <a href="https://github.com/annakrassowska/IT_wind">Github</a>
+                                </button>
+                                <button class="btn btn--outline">
+                                    <a href="https://it-wind.netlify.app/">Wersja live</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project project--2">
+                            <img src="img/blog-2.png" class="article__img" alt="zdjęcie aplikacji" data-aos="flip-up" data-aos-delay="200" data-aos-duration="750">
+                            <ul class="technology__list">
+                                <li>html</li>
+                                <li>scss</li>
+                                <li>javascript</li>
+                                <li>Jquery</li>
+                            </ul>
+                            <h4 class="project__title heading4">Doya App</h4>
+                            <p class="project__description">Aplikacja na zakupy do gadżetów i prezentów na podstawie projektu graficznego.</p>
+                            <div class="buttons">
+                                <button class="btn">
+                                    <a href="https://github.com/annakrassowska/Doya-website">Github</a>
+                                </button>
+                                <button class="btn btn--outline">
+                                    <a href="https://doya-app.netlify.app/">Wersja live</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__text portfolio__title--2">
+                        <h3 class="heading3">Projekty własne</h3>
+                    </div>
+                    <div class="portfolio__projects">
+                        <div class="project project--1">
+                            <img src="img/krassowski-photo.png" class="article__img" alt="zdjęcie aplikacji" data-aos="flip-up" data-aos-delay="200" data-aos-duration="750">
+                            <ul class="technology__list">
+                                <li>Wordpress</li>
+                            </ul>
+                            <h4 class="project__title heading4">Krassowskiphoto.com</h4>
+                            <p class="project__description">Strona internetowa fotografa Arkadiusza Krassowskiego</p>
+                            <div class="buttons">
+                                <button class="btn btn--outline">
+                                    <a href="https://www.krassowskiphoto.com/">Wersja live</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project project--2">
+                            <img src="img/projektTRA.png" class="article__img" alt="zdjęcie aplikacji" data-aos="flip-up" data-aos-delay="200" data-aos-duration="750">
+                            <ul class="technology__list">
+                                <li>html</li>
+                                <li>scss</li>
+                                <li>Javascript</li>
+                                <li>Jquery</li>
+                            </ul>
+                            <h4 class="project__title heading4">Projekt TRA</h4>
+                            <p class="project__description">Zadanie rekrutacyjne - utworzenie strony na podstawie projektu graficznego (wersja desktop) </p>
+                            <div class="buttons">
+                                <button class="btn">
+                                    <a href="https://github.com/annakrassowska/projektTRA">Github</a>
+                                </button>
+                                <button class="btn btn--outline">
+                                    <a href="https://tra-project.netlify.app/">Wersja live</a>
+                                </button>                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <img src="img/social.png" class="socialmedia__img" alt="social media" data-aos="fade-left" data-aos-delay="200" data-aos-duration="750"> -->
+                </div>
+        </section>
+
+        <!-- SECTION ABOUT -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__title">
+                    <h3 class="heading3">O mnie</h3>
+                </div>
+                <div class="about__info">
+                    <div class="about__text">
+                        <p class="paragraph paragraph--1">Cześć! Nazywam się Anna Krassowska. Od dwóch lat aktywnie rozwijam się w dziedzinie <strong>Front-end development</strong>. Obecnie pracuję w firmie Profitroom na stanowisku <strong>Web Support</strong>. W pracy mam okazję wykazać się zdyscyplinowaniem, terminowością i kreatywnością.</p>
+                        <p class="paragraph paragraph--2">Poza budową stron internetowych interesuje się <strong>grafiką i fotografią</strong>. Biegle obsługuje programy z rodziny Adobe - <strong>Photoshop,  Adobe Xd, Illustrator</strong>.</p>
+                    </div>
+                    <img src="img/about-img.svg" class="about__img" alt="zdjęcie aplikacji" data-aos="flip-up" data-aos-delay="200" data-aos-duration="750">
+                </div>
+                <div class="about__skills">
+                    <h3 class="heading3--color">Umiejętności i technologie</h3>
+                    <div class="tiles">
+                        <div class="tile">
+                            <p class="label tile--label">HTML</p>
+                            <p class="tile--description">Dobrze znam html, potrafię tworzyć przejrzysty kod i responsywne strony</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">CSS, SCSS</p>
+                            <p class="tile--description">Sprawnie tworzę style i potrafię używać preprocesora SCSS</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">Javascript</p>
+                            <p class="tile--description">Znajomość na poziomie podstawowym.</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">Jquery</p>
+                            <p class="tile--description">Znam i potrafię używać przydatne biblioteki takie jak Aos, slickslide.</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">Grafika</p>
+                            <p class="tile--description">Biegle obsługuje programy graficzne takie jak Photoshop lub Illustrator.</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">Wordpress</p>
+                            <p class="tile--description">Potrafię utworzyć stronę na szablonie i builderze Elementor, znam podstawowe wtyczki.</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">GIT</p>
+                            <p class="tile--description">Znam podstawowe komendy oraz korzystam z pracy na branche'ach</p>
+                        </div>
+                        <div class="tile">
+                            <p class="label tile--label">NPM</p>
+                            <p class="tile--description">Korzystam z paczek npm w celu instalacji bibliotek, kompilacji kodu scss oraz jego minifikacji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__info" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="1000">
+                    <h3 class="contact__heading">Kontakt</h3>
+                    <p class="contact__paragraph">Masz pytanie? Chętnie odpowiem! Zapraszam do kontaktu: </br>
+                    <strong><a href="mailto:krassowskaanna1@gmail.com">krassowskaanna1@gmail.com</a></strong></p>
+                </div>
+            </div>
+        </section> 
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                 <p>© Anna Krassowska, 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+</html>
